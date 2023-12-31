@@ -3,7 +3,6 @@ import LangsList from '@/components/LangsList'
 import Navbar from '@/components/Navbar'
 import SendIcon from '@/components/SendIcon'
 import Squares from '@/components/Squares'
-import TechIcon from '@/components/TechIcon'
 
 export default function Home() {
   return (
