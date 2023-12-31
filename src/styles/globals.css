@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chrome, Safari, etc. */
+.gradiant-blur {
+  filter: blur(600px);
+}
+
+/* Firefox-specific adjustment */
+@-moz-document url-prefix() {
+  .gradiant-blur {
+    filter: blur(90000px); /* Adjusted value for Firefox */
+  }
+}
