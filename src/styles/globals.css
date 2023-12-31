@@ -10,6 +10,9 @@
 /* Firefox-specific adjustment */
 @-moz-document url-prefix() {
   .gradiant-blur {
-    filter: blur(90000px); /* Adjusted value for Firefox */
+    filter: blur(600px) saturate(2);
+    border-radius: 50%;
+    opacity: 0.4;
+    transform: scale(1.2) translateY(-100px) translateX(-100px);
   }
 }
