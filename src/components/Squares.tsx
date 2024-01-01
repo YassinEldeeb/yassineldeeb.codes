@@ -6,7 +6,7 @@ const Squares = ({
 }: SVGProps<SVGSVGElement> & { squaresOpacity?: number }) => (
   <svg xmlns='http://www.w3.org/2000/svg' fill='none' {...props}>
     <path fill='none' d='M0 0h1212v1001H0z' />
-    <g opacity={squaresOpacity ?? 0.35}>
+    <g opacity={squaresOpacity ?? 0.4}>
       <path
         stroke='#fff'
         strokeOpacity={0.1}

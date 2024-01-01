@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className='relative h-full overflow-hidden'>
       <div className='absolute bg-black z-[-2] w-screen h-[1000%]' />
-      <Squares className='absolute z-[-1] top-0 right-[0px] pointer-events-none w-screen lg:block hidden' />
+      <Squares className='absolute z-[-1] top-0 left-0 pointer-events-none w-screen h-screen lg:block hidden' />
 
       <div className='overflow-hidden flex justify-center lg:h-screen lg:pb-0 pb-[300px]'>
         <div className='w-full h-full max-w-[2000px] relative'>
@@ -38,7 +38,7 @@ export default function About() {
                 <br />
                 shape products that customers love.
               </p>
-              <div className='flex gap-4'>
+              <div className='flex gap-4 lg:flex-row flex-col'>
                 <a
                   href='mailto:yassineldeeb94@gmail.com'
                   className='lg:mt-0 mt-4 flex gap-2 justify-center items-center bg-[#FF4B24] text-white w-max lg:px-7 lg:py-4 px-5 py-3 rounded-full lg:text-xl text-lg font-medium cursor-pointer hover:opacity-95 transition duration-150'
@@ -48,7 +48,7 @@ export default function About() {
                 </a>
                 <a
                   href='https://calendly.com/yassineldeeb94/introductory'
-                  className='lg:mt-0 mt-4 flex gap-2 justify-center items-center border-[1.5px] border-[white] text-white w-max lg:px-7 lg:py-4 px-5 py-3 rounded-full lg:text-xl text-lg font-medium cursor-pointer hover:bg-[rgba(255,255,255,0.06)] transition duration-150'
+                  className='lg:mt-0 flex gap-2 justify-center items-center border-[1.5px] border-[white] text-white w-max lg:px-7 lg:py-4 px-5 py-3 rounded-full lg:text-xl text-lg font-medium cursor-pointer hover:bg-[rgba(255,255,255,0.06)] transition duration-150'
                 >
                   <CalandarIcon />
                   Schedule Call
@@ -64,7 +64,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className='min-h-screen flex justify-center'>
+      <Squares className='absolute z-[-1] bottom-0 left-0 scale-y-[-1] scale-x-[-1] pointer-events-none w-screen h-screen lg:block hidden' />
+
+      <div className='min-h-screen flex justify-center items-center'>
         <div className='py-20 lg:px-28 px-4 z-[100] h-full w-full max-w-[2000px]'>
           <div className='flex lg:flex-row-reverse flex-col-reverse justify-between items-center gap-14 lg:gap-28'>
             <div className='flex-1 min-w-[50%]'>
