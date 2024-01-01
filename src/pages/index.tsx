@@ -3,6 +3,7 @@ import LangsList from '@/components/LangsList'
 import Navbar from '@/components/Navbar'
 import SendIcon from '@/components/SendIcon'
 import Squares from '@/components/Squares'
+import Image from 'next/image'
 
 export default function About() {
   return (
@@ -108,10 +109,10 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <img
+            <Image
               className='lg:max-w-[35%] max-w-[80%] z-[-2]'
               src='/me-again.png'
-              alt=''
+              alt='yassin eldeeb'
             />
           </div>
         </div>
