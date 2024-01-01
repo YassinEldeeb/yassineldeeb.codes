@@ -18,7 +18,22 @@ export default function Home() {
                 My Work Experience
               </h1>
 
-              <div className='flex gap-[30px] mt-16'>
+              <svg
+                className='my-10'
+                width='100%'
+                height='12'
+                viewBox='0 0 2781 12'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M6 11.3233C8.94552 11.3233 11.3333 8.93548 11.3333 5.98996C11.3333 3.04444 8.94552 0.656628 6 0.656628C3.05448 0.656628 0.666666 3.04444 0.666667 5.98996C0.666667 8.93548 3.05448 11.3233 6 11.3233ZM2775.5 11.3335C2778.45 11.3335 2780.83 8.94564 2780.83 6.00012C2780.83 3.0546 2778.45 0.666788 2775.5 0.666789C2772.55 0.666789 2770.17 3.0546 2770.17 6.00012C2770.17 8.94564 2772.55 11.3335 2775.5 11.3335ZM6 6.98996L2775.5 7.00012L2775.5 5.00012L6 4.98996L6 6.98996Z'
+                  fill='white'
+                  fill-opacity='0.2'
+                />
+              </svg>
+
+              <div className='flex gap-[30px]'>
                 <div className='w-[160px] h-[160px] rounded-full flex justify-center items-center border-2 border-[rgba(255,255,255,0.2)]'>
                   <svg
                     width='92'
