@@ -85,16 +85,12 @@ export default function About() {
                   moment in my early career.
                 </p>
                 <p className='mb-4'>
-                  Born and raised in Tanta, a small rural town in Egypt, I
-                  encountered numerous challenges due to scarce resources and
-                  limited educational opportunities. These obstacles led to my
-                  decision to leave high school during my senior year, a choice
-                  that would shape my future endeavors.{' '}
-                </p>
-                <p className='mb-4'>
-                  By the age of 15, I had already landed my first job and just a
-                  few years later, I began making impactful contributions to the
-                  JavaScript and Rust open-source communities.{' '}
+                  Hailing from Tanta, Egypt, my early start in technology led me
+                  to secure my first job at the age of 15. Shortly thereafter, I
+                  began to make significant contributions to the JavaScript and
+                  Rust open-source communities. My efforts have not only shaped
+                  my professional skills but also allowed me to give back to the
+                  community in meaningful ways.{' '}
                 </p>
                 <p className='mb-4'>
                   I am proud to have worked with{' '}
