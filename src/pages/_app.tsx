@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Poppins } from 'next/font/google'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={poppins.className}>
       <Component {...pageProps} />
+      <Analytics />
       <Head>
         <title>
           Yassin Eldeeb - Senior Software Engineer & Consultant | Empowering

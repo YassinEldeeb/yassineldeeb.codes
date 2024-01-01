@@ -1,3 +1,4 @@
+import CalandarIcon from '@/components/CalandarIcon'
 import Gradiants from '@/components/Gradiants'
 import LangsList from '@/components/LangsList'
 import Navbar from '@/components/Navbar'
@@ -37,9 +38,21 @@ export default function About() {
                 <br />
                 shape products that customers love.
               </p>
-              <div className='lg:mt-0 mt-4 flex gap-2 justify-center items-center bg-[#FF4B24] text-white w-max lg:px-7 lg:py-4 px-5 py-3 rounded-full lg:text-xl text-lg font-medium cursor-pointer hover:opacity-95 transition duration-150'>
-                <SendIcon />
-                Get In Touch
+              <div className='flex gap-4'>
+                <a
+                  href='mailto:yassineldeeb94@gmail.com'
+                  className='lg:mt-0 mt-4 flex gap-2 justify-center items-center bg-[#FF4B24] text-white w-max lg:px-7 lg:py-4 px-5 py-3 rounded-full lg:text-xl text-lg font-medium cursor-pointer hover:opacity-95 transition duration-150'
+                >
+                  <SendIcon />
+                  Contact Me
+                </a>
+                <a
+                  href='https://calendly.com/yassineldeeb94/introductory'
+                  className='lg:mt-0 mt-4 flex gap-2 justify-center items-center border-[1.5px] border-[white] text-white w-max lg:px-7 lg:py-4 px-5 py-3 rounded-full lg:text-xl text-lg font-medium cursor-pointer hover:bg-[rgba(255,255,255,0.06)] transition duration-150'
+                >
+                  <CalandarIcon />
+                  Schedule Call
+                </a>
               </div>
             </main>
           </div>
