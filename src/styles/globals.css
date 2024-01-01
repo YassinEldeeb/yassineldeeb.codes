@@ -16,3 +16,8 @@
     transform: scale(1.2) translateY(-100px) translateX(-100px);
   }
 }
+@media (max-width: 768px) {
+  .career-description br {
+    display: none;
+  }
+}

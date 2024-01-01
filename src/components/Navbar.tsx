@@ -2,7 +2,7 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 
 const NavItem = ({ path, label }: { path: string; label: string }) => (
-  <a href={path} className='cursor-pointer'>
+  <a href={path} className='cursor-pointer lg:text-base text-md'>
     {label}
   </a>
 )
@@ -23,18 +23,25 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='py-14 flex items-center justify-between'>
-      <a href='/' className='text-[26px] text-white tracking-wider'>
+    <nav className='lg:py-14 py-6 flex lg:flex-row flex-col-reverse lg:gap-0 gap-5 lg:justify-between lg:items-center'>
+      <a
+        href='/'
+        className='lg:text-[26px] text-[22px] text-white tracking-wider'
+      >
         Yassin Eldeeb
       </a>
-      <div className='flex gap-14 text-white items-center relative'>
-        <div
-          style={{ left: getActivePosition() }}
-          className='bg-[rgba(255,255,255,0.08)] absolute w-[100px] h-[50px] px-7 py-2.5 border-white border-solid border-[1px] rounded-full pointer-events-none'
-        />
-        {navbarLinks.map((link) => (
-          <NavItem key={link.path} path={link.path} label={link.label} />
-        ))}
+
+      <div>
+        <div className='flex lg:gap-14 gap-10 text-white items-center relative lg:justify-normal justify-start'>
+          <div
+            style={{ left: getActivePosition() }}
+            className='lg:block hidden bg-[rgba(255,255,255,0.08)] absolute w-[100px] h-[50px] px-7 py-2.5 border-white border-solid border-[1px] rounded-full pointer-events-none'
+          />
+          {navbarLinks.map((link) => (
+            <NavItem key={link.path} path={link.path} label={link.label} />
+          ))}
+        </div>
+        <div className='lg:hidden mt-5 w-[100%] h-[1.5px] bg-white opacity-20 rounded-full'></div>
       </div>
     </nav>
   )

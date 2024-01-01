@@ -21,7 +21,7 @@ const CareerListItem = ({
 }) => (
   <>
     <svg
-      className='my-10'
+      className='lg:my-10 my-5'
       width='100%'
       height='12'
       viewBox='0 0 2781 12'
@@ -35,14 +35,16 @@ const CareerListItem = ({
       />
     </svg>
 
-    <div className='flex gap-[30px]'>
-      <div className='min-w-[160px] min-h-[160px] max-w-[160px] max-h-[160px] rounded-full flex justify-center items-center border-2 border-[rgba(255,255,255,0.2)]'>
+    <div className='flex lg:gap-[30px] gap-[16px]'>
+      <div className='lg:p-0 p-2.5 lg:min-w-[160px] lg:min-h-[160px] lg:max-w-[160px] lg:max-h-[160px] min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] rounded-full flex justify-center items-center border-2 border-[rgba(255,255,255,0.2)]'>
         {Icon}
       </div>
-      <div className='text-white flex flex-col justify-center gap-3.5'>
+      <div className='text-white flex flex-col justify-center lg:gap-3.5 gap-2'>
         <h3 className='font-medium text-[#FF4B24]'>{date}</h3>
-        <h2 className='font-medium text-3xl'>{title}</h2>
-        {Description}
+        <h2 className='font-medium lg:text-3xl text-2xl'>{title}</h2>
+        <span className='lg:text-base text-xs career-description'>
+          {Description}
+        </span>
       </div>
     </div>
   </>
@@ -50,10 +52,10 @@ const CareerListItem = ({
 
 export default function Home() {
   return (
-    <div className='relative bg-black'>
+    <div className='relative bg-black pb-[200px]'>
       <div className='flex justify-center'>
         <div className='w-full h-full max-w-[2000px] relative'>
-          <div className='min-h-max px-28 z-[100] w-full'>
+          <div className='min-h-max lg:px-28 px-4 z-[100] w-full'>
             <Navbar />
             <Squares className='absolute top-0 right-[0px] pointer-events-none w-screen h-screen' />
             <Squares
@@ -61,17 +63,17 @@ export default function Home() {
               className='absolute bottom-0 right-[0px] scale-x-[-1] pointer-events-none w-screen h-screen'
             />
 
-            <div className='mt-10'>
-              <h4 className='text-[#D324FF] text-xl font-medium mb-2'>
+            <div className='lg:mt-10 mt-2'>
+              <h4 className='text-[#D324FF] lg:text-xl text-lg font-medium mb-2'>
                 CAREER
               </h4>
-              <h1 className='text-white text-5xl font-bold'>
+              <h1 className='text-white lg:text-5xl text-3xl font-bold'>
                 My Work Experience
               </h1>
 
               <CareerListItem
                 Description={
-                  <p className='leading-8'>
+                  <p className='lg:leading-8 leading-6'>
                     Co-leading Conductor's development, a performant gateway for
                     federated subgraphs <span className='font-bold'>•</span> Top
                     contributor for graphql.org{' '}
@@ -89,7 +91,7 @@ export default function Home() {
 
               <CareerListItem
                 Description={
-                  <p className='leading-8'>
+                  <p className='lg:leading-8 leading-6'>
                     Developed complex trading tools for Spiderrock{' '}
                     <span className='font-bold'>•</span> Collaborated with
                     Invisible Institute to build tools and pipelines combating
@@ -107,7 +109,7 @@ export default function Home() {
 
               <CareerListItem
                 Description={
-                  <p className='leading-8'>
+                  <p className='lg:leading-8 leading-6'>
                     Led the launch of BJU Press Home School, now boasting over
                     50,000 active monthly students, by creating an interactive
                     activity builder.
@@ -122,7 +124,7 @@ export default function Home() {
               />
               <CareerListItem
                 Description={
-                  <p className='leading-8'>
+                  <p className='lg:leading-8 leading-6'>
                     Crafted the "Create Prisma Generator"{' '}
                     <span className='font-bold'>•</span> Launched "Deadliner", a
                     Rust-based deadline management desktop app{' '}
@@ -144,7 +146,7 @@ export default function Home() {
               />
               <CareerListItem
                 Description={
-                  <p className='leading-8'>
+                  <p className='lg:leading-8 leading-6'>
                     Developed multiple geographic tools to visualize customer
                     sales across Egypt and engineered internal tools to enhance
                     accountants' productivity.
@@ -161,7 +163,7 @@ export default function Home() {
               />
               <CareerListItem
                 Description={
-                  <p className='leading-8'>
+                  <p className='lg:leading-8 leading-6'>
                     Led the learning materials for the frontend team{' '}
                     <span className='font-bold'>•</span> Developed multiple
                     promotional websites for the launched mobile apps including

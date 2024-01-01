@@ -4,8 +4,7 @@ const SendIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='20'
-      height='20'
+      className='lg:w-[20px] lg:h-[20px] w-[18px] h-[18px]'
       viewBox='0 0 24 24'
       fill='white'
     >
