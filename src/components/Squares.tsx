@@ -1,9 +1,12 @@
 import * as React from 'react'
 import { SVGProps } from 'react'
-const Squares = (props: SVGProps<SVGSVGElement>) => (
+const Squares = ({
+  squaresOpacity,
+  ...props
+}: SVGProps<SVGSVGElement> & { squaresOpacity?: number }) => (
   <svg xmlns='http://www.w3.org/2000/svg' fill='none' {...props}>
     <path fill='none' d='M0 0h1212v1001H0z' />
-    <g opacity={0.22}>
+    <g opacity={squaresOpacity ?? 0.35}>
       <path
         stroke='#fff'
         strokeOpacity={0.1}
@@ -59,7 +62,7 @@ const Squares = (props: SVGProps<SVGSVGElement>) => (
         transform='rotate(38.528 452.229 385.755)'
       />
     </g>
-    <g opacity={0.22}>
+    <g opacity={squaresOpacity ?? 0.35}>
       <path
         stroke='#fff'
         strokeOpacity={0.1}

@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import Squares from '@/components/Squares'
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
         <div className='w-full h-full max-w-[2000px] relative'>
           <div className='min-h-max px-28 z-[100] w-full'>
             <Navbar />
+            <Squares className='absolute top-0 right-[0px] pointer-events-none w-screen h-screen' />
 
             <div className='mt-10'>
               <h4 className='text-[#D324FF] text-xl font-medium mb-2'>
