@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathname = usePathname()
 
   const navbarLinks = [
-    { path: '/', label: 'Home', moveActiveBy: '-25px' },
+    { path: '/', label: 'About', moveActiveBy: '-25px' },
     { path: '/career', label: 'Career', moveActiveBy: '82px' },
     { path: '/talks', label: 'Talks', moveActiveBy: '120px' },
     { path: '/blogs', label: 'Blogs', moveActiveBy: '150px' },
@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className='lg:py-14 py-6 flex lg:flex-row flex-col-reverse lg:gap-0 gap-5 lg:justify-between lg:items-center'>
       <a
         href='/'
-        className='lg:text-[26px] text-[22px] text-white tracking-wider'
+        className='lg:block hidden lg:text-[26px] text-[22px] text-white tracking-wider'
       >
         Yassin Eldeeb
       </a>

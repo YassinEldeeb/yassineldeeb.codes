@@ -50,7 +50,7 @@ const CareerListItem = ({
   </>
 )
 
-export default function Home() {
+export default function Career() {
   return (
     <div className='relative bg-black pb-[200px]'>
       <div className='flex justify-center'>
@@ -164,17 +164,14 @@ export default function Home() {
               <CareerListItem
                 Description={
                   <p className='lg:leading-8 leading-6'>
-                    Led the learning materials for the frontend team{' '}
-                    <span className='font-bold'>•</span> Developed multiple
-                    promotional websites for the launched mobile apps including
-                    "ADG", <br />
-                    an app for buying and selling all kinds of used stuff in
-                    Egypt.
+                    Developed multiple promotional websites for the launched
+                    mobile apps including "ADG", an app for buying and selling
+                    all kinds of used stuff in Egypt.
                   </p>
                 }
                 Icon={<FictionApps />}
                 date='Feb 2019 - Nov 2019'
-                title='Lead Frontend Engineer @ Fiction Apps'
+                title='Frontend Engineer @ Fiction Apps'
               />
             </div>
             <svg

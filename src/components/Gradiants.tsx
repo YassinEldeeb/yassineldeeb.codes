@@ -4,7 +4,7 @@ const Gradiants = (props: React.HTMLAttributes<HTMLDivElement>) => (
   <div
     style={{
       display: 'flex',
-      opacity: 0.3,
+      opacity: 0.2,
     }}
     {...props}
   >

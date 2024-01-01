@@ -4,13 +4,13 @@ import Navbar from '@/components/Navbar'
 import SendIcon from '@/components/SendIcon'
 import Squares from '@/components/Squares'
 
-export default function Home() {
+export default function About() {
   return (
-    <div className='relative min-h-screen overflow-hidden'>
-      <div className='absolute bg-black z-[-2] w-screen h-screen' />
-      <Squares className='absolute z-[-1] bottom-0 right-[0px] pointer-events-none w-screen h-screen lg:block hidden' />
+    <div className='relative h-full overflow-hidden'>
+      <div className='absolute bg-black z-[-2] w-screen h-[1000%]' />
+      <Squares className='absolute z-[-1] top-0 right-[0px] pointer-events-none w-screen  lg:block hidden' />
 
-      <div className='flex justify-center h-screen'>
+      <div className='overflow-hidden flex justify-end lg:h-screen lg:pb-0 pb-[300px]'>
         <div className='w-full h-full max-w-[2000px] relative'>
           <Gradiants className='absolute z-[-1] bottom-[-600px] left-[-200px] pointer-events-none' />
 
@@ -45,8 +45,75 @@ export default function Home() {
 
           <img
             src='/me-speaking.png'
-            className='absolute lg:h-screen max-h-[1100px] lg:top-0 bottom-[-150px] right-0 pointer-events-none z-[-2] lg:opacity-100 opacity-50'
+            className='absolute lg:h-screen max-h-[1100px] lg:top-0 bottom-[-400px] right-0 pointer-events-none z-[-2] lg:opacity-100 opacity-50'
           />
+        </div>
+      </div>
+
+      <div className='min-h-screen flex justify-center'>
+        <div className='py-20 lg:px-28 px-4 z-[100] h-full w-full max-w-[2000px]'>
+          <div className='flex lg:flex-row-reverse flex-col-reverse justify-between items-center gap-14 lg:gap-28'>
+            <div className='flex-1 min-w-[50%]'>
+              <h4 className='text-[#D324FF] lg:text-xl text-lg font-medium mb-2'>
+                Hello.
+              </h4>
+              <h1 className='text-white lg:text-5xl text-3xl font-bold'>
+                My name is Yassin Eldeeb.
+              </h1>
+
+              <div className='mt-10 text-[#D9D9D9] leading-7 text-[17px]'>
+                <p className='mb-4'>
+                  As a Senior Software Engineer and Consultant, my journey into
+                  the world of developer tooling and creating exceptional
+                  customer experiences has been both unique and rewarding. My
+                  commitment to coding intensified after graduating from a
+                  frontend coding bootcamp at the age of 14, marking a pivotal
+                  moment in my early career.
+                </p>
+                <p className='mb-4'>
+                  Born and raised in Tanta, a small rural town in Egypt, I
+                  encountered numerous challenges due to scarce resources and
+                  limited educational opportunities. These obstacles led to my
+                  decision to leave high school during my senior year, a choice
+                  that would shape my future endeavors.{' '}
+                </p>
+                <p className='mb-4'>
+                  By the age of 15, I had already landed my first job and just a
+                  few years later, I began making impactful contributions to the
+                  JavaScript and Rust open-source communities.{' '}
+                </p>
+                <p className='mb-4'>
+                  I am proud to have worked with{' '}
+                  <a
+                    className='underline'
+                    href='https://invisible.institute/beneath-the-surface'
+                  >
+                    Invisible Institute's Beneath the Surface
+                  </a>
+                  , supporting their mission to foster justice in Chicago
+                  against police abuse.
+                </p>
+                <p className='mb-4'>
+                  Professionally, I currently serve as a Senior Open Source
+                  Devtools Engineer at The Guild and am also available for
+                  consulting opportunities.{' '}
+                </p>
+                <p className='mb-4'>
+                  Outside of work, I seek adventure in activities such as
+                  skydiving, hiking, and deep diving.{' '}
+                </p>
+                <p className='mb-4'>
+                  I am passionate about sharing my experiences and knowledge,
+                  frequently speaking at conferences and meetups globally.
+                </p>
+              </div>
+            </div>
+            <img
+              className='lg:max-w-[35%] max-w-[80%] z-[-2]'
+              src='/me-again.png'
+              alt=''
+            />
+          </div>
         </div>
       </div>
     </div>
