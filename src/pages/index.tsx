@@ -8,11 +8,11 @@ export default function About() {
   return (
     <div className='relative h-full overflow-hidden'>
       <div className='absolute bg-black z-[-2] w-screen h-[1000%]' />
-      <Squares className='absolute z-[-1] top-0 right-[0px] pointer-events-none w-screen  lg:block hidden' />
+      <Squares className='absolute z-[-1] top-0 right-[0px] pointer-events-none w-screen lg:block hidden' />
 
-      <div className='overflow-hidden flex justify-end lg:h-screen lg:pb-0 pb-[300px]'>
+      <div className='overflow-hidden flex justify-center lg:h-screen lg:pb-0 pb-[300px]'>
         <div className='w-full h-full max-w-[2000px] relative'>
-          <Gradiants className='absolute z-[-1] bottom-[-600px] left-[-200px] pointer-events-none' />
+          <Gradiants className='absolute z-[-1] bottom-[-600px] left-[-200px] pointer-events-none lg:block hidden' />
 
           <div className='min-h-max lg:px-28 px-4 z-[100] w-full'>
             <Navbar />
