@@ -64,7 +64,10 @@ export default function About() {
         </div>
       </div>
 
-      <Squares className='absolute z-[-1] bottom-0 left-0 scale-y-[-1] scale-x-[-1] pointer-events-none w-screen h-screen lg:block hidden' />
+      <Squares
+        squaresOpacity={0.3}
+        className='absolute z-[-1] bottom-0 left-0 scale-y-[-1] scale-x-[-1] pointer-events-none w-screen h-screen lg:block hidden'
+      />
 
       <div className='min-h-screen flex justify-center items-center'>
         <div className='py-20 lg:px-28 px-4 z-[100] h-full w-full max-w-[2000px]'>
