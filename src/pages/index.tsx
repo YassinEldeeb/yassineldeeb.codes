@@ -113,6 +113,8 @@ export default function About() {
               className='lg:max-w-[35%] max-w-[80%] z-[-2]'
               src='/me-again.png'
               alt='yassin eldeeb'
+              width={1300}
+              height={1300}
             />
           </div>
         </div>
