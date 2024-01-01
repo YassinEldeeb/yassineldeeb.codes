@@ -1,5 +1,7 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
+import GithubIcon from './companies/Github'
+import TwitterIcon from './TwitterIcon'
 
 const NavItem = ({ path, label }: { path: string; label: string }) => (
   <a href={path} className='cursor-pointer lg:text-base text-md'>
@@ -32,7 +34,7 @@ const Navbar = () => {
       </a>
 
       <div>
-        <div className='flex lg:gap-14 gap-10 text-white items-center relative lg:justify-normal justify-start'>
+        <div className='flex lg:gap-14 gap-5 text-white items-center relative lg:justify-normal justify-start'>
           <div
             style={{ left: getActivePosition() }}
             className='lg:block hidden bg-[rgba(255,255,255,0.08)] absolute w-[100px] h-[50px] px-7 py-2.5 border-white border-solid border-[1px] rounded-full pointer-events-none'
@@ -40,6 +42,14 @@ const Navbar = () => {
           {navbarLinks.map((link) => (
             <NavItem key={link.path} path={link.path} label={link.label} />
           ))}
+          <div className='flex items-center lg:gap-6 gap-4'>
+            <a href='https://github.com/yassineldeeb' target='_blank'>
+              <GithubIcon size={32} />
+            </a>
+            <a href='https://twitter.com/yassineldeeb7' target='_blank'>
+              <TwitterIcon />
+            </a>
+          </div>
         </div>
         <div className='lg:hidden mt-5 w-[100%] h-[1.5px] bg-white opacity-20 rounded-full'></div>
       </div>
