@@ -6,7 +6,7 @@ import Squares from '@/components/Squares'
 
 export default function Home() {
   return (
-    <div className='relative min-h-screen'>
+    <div className='relative min-h-screen overflow-y-hidden'>
       <div className='absolute bg-black z-[-2] w-screen h-screen' />
       <Squares className='absolute z-[-1] bottom-0 right-[0px] pointer-events-none w-screen h-screen' />
       <Gradiants className='absolute z-[-1] bottom-[-600px] left-[-200px] pointer-events-none' />
